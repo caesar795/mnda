@@ -1,0 +1,118 @@
+/* Reset Dasar */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #000, #000000);
+    color: rgb(248, 239, 223);
+    padding: 5px 15px; /* Perkecil padding */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 40px; /* Perkecil ukuran logo */
+    height: auto;
+    border-radius: 50%;
+    margin-top: 5px; /* Kurangi margin atas */
+}
+
+.header p {
+    font-size: 1rem; /* Perkecil teks */
+    font-weight: bold;
+    margin-left: 100px; /* Kurangi margin kiri */
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar */
+.navbar ul {
+    margin-right: 20px; /* Kurangi margin kanan */
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0 10px; /* Kurangi jarak antar item */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem; /* Perkecil ukuran teks */
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 5px 10px; /* Tambahkan padding */
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffd700; /* Efek hover */
+}
+
+/* Konten Halaman */
+section {
+    padding: 100px 20px;
+}
+
+#home {
+    background: url('bg2.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(17, 16, 16);
+    text-align: center;
+    position: relative;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#home h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 600px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-top: 3px solid #ffd700;
+}
